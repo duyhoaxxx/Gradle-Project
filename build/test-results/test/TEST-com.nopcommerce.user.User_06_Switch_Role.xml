@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nopcommerce.user.User_06_Switch_Role" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-13T14:45:36" hostname="DUYHOA" time="19.108">
+  <properties/>
+  <testcase name="TC_01_Register_Valid" classname="com.nopcommerce.user.User_06_Switch_Role" time="3.128"/>
+  <testcase name="TC_02_Login_User" classname="com.nopcommerce.user.User_06_Switch_Role" time="2.921"/>
+  <testcase name="TC_03_Login_Admin" classname="com.nopcommerce.user.User_06_Switch_Role" time="12.953"/>
+  <system-out><![CDATA[[2022-03-13 21:45:36,910-5p] Register with emailAutoTest6531@gmail.com   Pass: 123456
+[2022-03-13 21:45:41,431-5p] Verify
+[2022-03-13 21:45:41,503-5p]  -------------------------- PASSED -------------------------- 
+[2022-03-13 21:45:41,503-5p] Assert
+]]></system-out>
+  <system-err><![CDATA[ChromeDriver was started successfully.
+Mar 13, 2022 9:45:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

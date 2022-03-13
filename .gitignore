@@ -1,0 +1,9 @@
+/bin/
+/test-output/
+/gradle-output/
+/extentReport/
+/allure-json/
+/ReportNGImage/
+/scriptLogs/
+/browserLogs/
+/downloadFiles/
