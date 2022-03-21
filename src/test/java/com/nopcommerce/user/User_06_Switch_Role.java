@@ -34,7 +34,7 @@ public class User_06_Switch_Role extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	private void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 		userHomePage.zoomOut(driver);
