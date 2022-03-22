@@ -6,59 +6,23 @@ import pageObjects.nopCommerce.admin.AdminLoginPageObject;
 import pageObjects.nopCommerce.user.*;
 
 public class PageGeneratorManager {
-	public static UserHomePageObject getUserHomePage(WebDriver driver) {
-		return new UserHomePageObject(driver);
-	}
-	
-	public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
-		return new UserLoginPageObject(driver);
-	}
-	
-	public static UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
-		return new UserRegisterPageObject(driver);
-	}
-	
-	public static UserCustomerInfoPageObject getUserMyAccountPage(WebDriver driver) {
-		return new UserCustomerInfoPageObject(driver);
-	}
+    public static UserHomePageObject getUserHomePage(WebDriver driver) {
+        return new UserHomePageObject(driver);
+    }
 
-	public static UserCustomerInfoPageObject getUserCustomerInfoPage(WebDriver driver) {
-		return new UserCustomerInfoPageObject(driver);
-	}
+    public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
+        return new UserLoginPageObject(driver);
+    }
 
-	public static UserAddressPageObject getUserAddressPage(WebDriver driver) {
-		return new UserAddressPageObject(driver);
-	}
-	
-	public static UserOrdersPageObject getUserOrdersPage(WebDriver driver) {
-		return new UserOrdersPageObject(driver);
-	}
+    public static UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
+        return new UserRegisterPageObject(driver);
+    }
 
-	public static UserDownloadableProductsPageObject getUserDownloadableProductsPage(WebDriver driver) {
-		return new UserDownloadableProductsPageObject(driver);
-	}
+    public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+        return new AdminLoginPageObject(driver);
+    }
 
-	public static UserBackInStockSubscriptionsPageObject getUserBackInStockSubsciptionsPage(WebDriver driver) {
-		return new UserBackInStockSubscriptionsPageObject(driver);
-	}
-
-	public static UserRewardPointsPageObject getUserRewardPointsPage(WebDriver driver) {
-		return new UserRewardPointsPageObject(driver);
-	}
-	
-	public static UserChangePasswordPageObject getUserChangePasswordPage(WebDriver driver) {
-		return new UserChangePasswordPageObject(driver);
-	}
-	
-	public static UserMyProductReviewsPageObject getUserMyProductReviewsPage(WebDriver driver) {
-		return new UserMyProductReviewsPageObject(driver);
-	}
-	
-	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
-		return new AdminLoginPageObject(driver);
-	}
-	
-	public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
-		return new AdminDashboardPageObject(driver);
-	}
+    public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
+        return new AdminDashboardPageObject(driver);
+    }
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.nopcommerce.user.User_06_Switch_Role" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-21T17:52:06" hostname="DUYHOA" time="18.437">
+<testsuite name="com.nopcommerce.user.User_06_Switch_Role" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-22T02:19:02" hostname="DUYHOA" time="17.762">
   <properties/>
-  <testcase name="TC_01_Register_Valid" classname="com.nopcommerce.user.User_06_Switch_Role" time="2.873"/>
-  <testcase name="TC_02_Login_User" classname="com.nopcommerce.user.User_06_Switch_Role" time="2.465"/>
-  <testcase name="TC_03_Login_Admin" classname="com.nopcommerce.user.User_06_Switch_Role" time="13.023"/>
-  <system-out><![CDATA[[2022-03-22 00:52:06,710] Register with emailAutoTest8014@gmail.com   Pass: 123456
-[2022-03-22 00:52:10,652] Verify
-[2022-03-22 00:52:10,727]  -------------------------- PASSED -------------------------- 
-[2022-03-22 00:52:10,727] Assert
+  <testcase name="TC_01_Register_Valid" classname="com.nopcommerce.user.User_06_Switch_Role" time="2.88"/>
+  <testcase name="TC_02_Login_User" classname="com.nopcommerce.user.User_06_Switch_Role" time="2.342"/>
+  <testcase name="TC_03_Login_Admin" classname="com.nopcommerce.user.User_06_Switch_Role" time="12.496"/>
+  <system-out><![CDATA[[2022-03-22 09:19:03,285] Register with emailAutoTest5027@gmail.com   Pass: 123456
+[2022-03-22 09:19:07,126] Verify
+[2022-03-22 09:19:07,181]  -------------------------- PASSED -------------------------- 
+[2022-03-22 09:19:07,181] Assert
 ]]></system-out>
   <system-err><![CDATA[ChromeDriver was started successfully.
-Mar 22, 2022 12:52:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 22, 2022 9:19:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

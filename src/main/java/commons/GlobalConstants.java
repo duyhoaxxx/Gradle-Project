@@ -3,16 +3,72 @@ package commons;
 import java.io.File;
 
 public class GlobalConstants {
-	public static final int LONG_TIMEOUT = 30;
-	public static final int SHORT_TIMEOUT = 6;
-	public static final String PORTAL_PAGE_URL = "https://demo.nopcommerce.com/";
-	public static final String ADMIN_PAGE_URL = "https://admin-demo.nopcommerce.com/";
-	public static final String OS_NAME = System.getProperty("os.name");
-	public static final String PROJECT_PATH = System.getProperty("user.dir");
+    private static GlobalConstants globalConstants;
 
-	public static final String UPLOAD_FILE_TYPE = "//input[@type='file']";
-	public static final String UPLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
-	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "ReportNGImage" + File.separator;
-	public static final String DOWNLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "downloadFiles";
-	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
+    private GlobalConstants() {
+
+    }
+
+    public static synchronized GlobalConstants getGlobalConstants() {
+        if (globalConstants == null)
+            globalConstants = new GlobalConstants();
+        return globalConstants;
+    }
+
+    public int getLongTimeout() {
+        return longTimeout;
+    }
+
+    public int getShortTimeout() {
+        return shortTimeout;
+    }
+
+    public String getPortalPageUrl() {
+        return portalPageUrl;
+    }
+
+    public String getAdminPageUrl() {
+        return adminPageUrl;
+    }
+
+    public String getOsName() {
+        return osName;
+    }
+
+    public String getProjectPath() {
+        return projectPath;
+    }
+
+    public String getUploadFilesType() {
+        return uploadFilesType;
+    }
+
+    public String getUploadFilesFolder() {
+        return uploadFilesFolder;
+    }
+
+    public String getReportNGScreenshot() {
+        return reportNGScreenshot;
+    }
+
+    public String getDownloadFilesFolder() {
+        return downloadFilesFolder;
+    }
+
+    public String getBrowserLogsFolder() {
+        return browserLogsFolder;
+    }
+
+    private final int longTimeout = 30;
+    private final int shortTimeout = 6;
+    private final String portalPageUrl = "https://demo.nopcommerce.com/";
+    private final String adminPageUrl = "https://admin-demo.nopcommerce.com/";
+    private final String osName = System.getProperty("os.name");
+    private final String projectPath = System.getProperty("user.dir");
+
+    private final String uploadFilesType = "//input[@type='file']";
+    private final String uploadFilesFolder = projectPath + File.separator + "uploadFiles" + File.separator;
+    private final String reportNGScreenshot = projectPath + File.separator + "ReportNGImage" + File.separator;
+    private final String downloadFilesFolder = projectPath + File.separator + "downloadFiles";
+    private final String browserLogsFolder = projectPath + File.separator + "browserLogs";
 }

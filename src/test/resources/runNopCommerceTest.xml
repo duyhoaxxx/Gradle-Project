@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
 
+    <parameter name="envName" value="local"/>
+    <parameter name="serverName" value="portable"/>
+
     <listeners>
         <listener class-name="commons.MethodListener"/>
         <listener class-name="reportConfig.ExtentTestListener"/>

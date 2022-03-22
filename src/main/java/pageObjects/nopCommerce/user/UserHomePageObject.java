@@ -3,7 +3,7 @@ package pageObjects.nopCommerce.user;
 import commons.BasePage;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
-import pageUIs.nopCommerce.user.HomePageUI;
+import pageUIs.nopCommerce.HomePageUI;
 
 public class UserHomePageObject extends BasePage {
 
@@ -25,11 +25,6 @@ public class UserHomePageObject extends BasePage {
 
 	public String getTopicBlockTitle() {
 		return getElementText(driver, HomePageUI.TOPIC_BLOCK_TITLE);
-	}
-
-	public UserCustomerInfoPageObject clickToMyAccountLink() {
-		clickToElement(driver, HomePageUI.MY_ACCOUNT_CLICK);
-		return PageGeneratorManager.getUserMyAccountPage(driver);
 	}
 
 }
