@@ -18,8 +18,7 @@ import pageUIs.nopCommerce.admin.AdminLoginPageUI;
 import java.util.Random;
 import java.util.Set;
 
-public class User_06_Switch_Role extends BaseTest {
-
+public class User_01_Switch_Role extends BaseTest {
     private UserHomePageObject userHomePage;
     private UserRegisterPageObject userRegisterPage;
     private UserLoginPageObject userLoginPage;
@@ -40,10 +39,6 @@ public class User_06_Switch_Role extends BaseTest {
         lastName = "Pham";
         email = fakeEmail();
         password = "123456";
-    }
-
-    private String fakeEmail() {
-        return "AutoTest" + (new Random().nextInt(9999)) + "@gmail.com";
     }
 
     @Test
@@ -101,5 +96,9 @@ public class User_06_Switch_Role extends BaseTest {
     private void afterClass(String browserName) {
         log.info("Post-Condition: Close browser " + browserName);
         cleanBrowserAndDriver();
+    }
+
+    private String fakeEmail() {
+        return "AutoTest" + (new Random().nextInt(9999)) + "@gmail.com";
     }
 }
